@@ -8,4 +8,4 @@ Open source tools are widely used by hackers and security developers, but resear
 - KnowledgeExtractionModule: Importance knowledge extraction method code of SecTKG.
 
 ## Dataset
-We will publish the dataset once the paper is accepted.
+The data are not publicly available due to the sensitive nature of the security tools dataset. If you are interested in obtaining access to the dataset, we kindly suggest that you contact the corresponding author of the paper. Please email <opcodesec@gmail.com> to initiate the process of requesting the dataset. In the email, please provide a brief summary of your research interests, the intended use of the dataset, and any relevant background or qualifications that support your request.
