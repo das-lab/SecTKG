@@ -1,0 +1,581 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/administrator/ontologies/2023/5/secutiy-tools-ontology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/administrator/ontologies/2023/5/secutiy-tools-ontology">
+    <Prefix name="" IRI="http://www.semanticweb.org/administrator/ontologies/2023/5/secutiy-tools-ontology/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Attack-phase"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Consequence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Issue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Location"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Organization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SecTool"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SecUser"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Type"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vulnerability"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#assosicate"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#belong_to"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#cause"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#exploit"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#implement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#located_at"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#use"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#IssueDataProperty"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#OrganizationDataProperty"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#SecToolDataProperty"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#SecUserDataProperty"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#avatar"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#blog"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#body"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#branches"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#company"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#create_time"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#created_time"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#description"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#email"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hardware"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hireable"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#homepage"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#language"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#license"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#open_issues_count"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#operating_system"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#org_blog"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#org_description"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#org_email"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#org_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#org_repo_count"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#org_twitter"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#owner_type"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#protocol"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#readme"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#repo_count"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#repo_id"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#repo_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#security_term"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#size"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#title"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#topics"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#twitter"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#update_time"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#updated_time"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#user_id"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#user_name"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Actions"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Application_tool"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DenialOfService"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Exploit"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lateral_movement"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LossOfConfiguration"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LossOfInformation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Persistence"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Reconnaissance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RemoteAccess"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#System_tool"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Attack-phase"/>
+        <Class IRI="#SecTool"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Consequence"/>
+        <Class IRI="#SecTool"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Issue"/>
+        <Class IRI="#SecTool"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Issue"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#belong_to"/>
+            <Class IRI="#SecTool"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Issue"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#belong_to"/>
+            <Class IRI="#SecUser"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Location"/>
+        <Class IRI="#SecUser"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Organization"/>
+        <Class IRI="#SecUser"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Organization"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#located_at"/>
+            <Class IRI="#Location"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SecTool"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#belong_to"/>
+            <Class IRI="#SecUser"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SecTool"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#exploit"/>
+            <Class IRI="#Vulnerability"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SecTool"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#cause"/>
+            <Class IRI="#Consequence"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SecTool"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#implement"/>
+            <Class IRI="#Attack-phase"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SecUser"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#assosicate"/>
+            <Class IRI="#SecUser"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SecUser"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#belong_to"/>
+            <Class IRI="#Organization"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SecUser"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#implement"/>
+            <Class IRI="#Attack-phase"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SecUser"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#located_at"/>
+            <Class IRI="#Location"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SecUser"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#use"/>
+            <Class IRI="#SecTool"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Type"/>
+        <Class IRI="#SecTool"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vulnerability"/>
+        <Class IRI="#SecTool"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vulnerability"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#cause"/>
+            <Class IRI="#Consequence"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vulnerability"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#implement"/>
+            <Class IRI="#Attack-phase"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Attack-phase"/>
+        <NamedIndividual IRI="#Actions"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Type"/>
+        <NamedIndividual IRI="#Application_tool"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Consequence"/>
+        <NamedIndividual IRI="#DenialOfService"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attack-phase"/>
+        <NamedIndividual IRI="#Exploit"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attack-phase"/>
+        <NamedIndividual IRI="#Lateral_movement"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Consequence"/>
+        <NamedIndividual IRI="#LossOfConfiguration"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Consequence"/>
+        <NamedIndividual IRI="#LossOfInformation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attack-phase"/>
+        <NamedIndividual IRI="#Persistence"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attack-phase"/>
+        <NamedIndividual IRI="#Reconnaissance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Consequence"/>
+        <NamedIndividual IRI="#RemoteAccess"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Type"/>
+        <NamedIndividual IRI="#System_tool"/>
+    </ClassAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#located_at"/>
+        <Class IRI="#SecUser"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#use"/>
+        <Class IRI="#SecUser"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#located_at"/>
+        <Class IRI="#Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#use"/>
+        <Class IRI="#SecTool"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#avatar"/>
+        <DataProperty IRI="#SecUserDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#blog"/>
+        <DataProperty IRI="#SecUserDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#body"/>
+        <DataProperty IRI="#IssueDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#branches"/>
+        <DataProperty IRI="#SecToolDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#company"/>
+        <DataProperty IRI="#SecUserDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#create_time"/>
+        <DataProperty IRI="#SecUserDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#created_time"/>
+        <DataProperty IRI="#SecToolDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#description"/>
+        <DataProperty IRI="#SecToolDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#email"/>
+        <DataProperty IRI="#SecUserDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hardware"/>
+        <DataProperty IRI="#SecToolDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hireable"/>
+        <DataProperty IRI="#SecUserDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#homepage"/>
+        <DataProperty IRI="#SecToolDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#language"/>
+        <DataProperty IRI="#SecToolDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#license"/>
+        <DataProperty IRI="#SecToolDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#name"/>
+        <DataProperty IRI="#SecUserDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#open_issues_count"/>
+        <DataProperty IRI="#SecToolDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#operating_system"/>
+        <DataProperty IRI="#SecToolDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#org_blog"/>
+        <DataProperty IRI="#OrganizationDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#org_description"/>
+        <DataProperty IRI="#OrganizationDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#org_email"/>
+        <DataProperty IRI="#OrganizationDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#org_name"/>
+        <DataProperty IRI="#OrganizationDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#org_repo_count"/>
+        <DataProperty IRI="#OrganizationDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#org_twitter"/>
+        <DataProperty IRI="#OrganizationDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#owner_type"/>
+        <DataProperty IRI="#SecToolDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#protocol"/>
+        <DataProperty IRI="#SecToolDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#readme"/>
+        <DataProperty IRI="#SecToolDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#repo_count"/>
+        <DataProperty IRI="#SecUserDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#repo_id"/>
+        <DataProperty IRI="#SecToolDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#repo_name"/>
+        <DataProperty IRI="#SecToolDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#security_term"/>
+        <DataProperty IRI="#SecToolDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#size"/>
+        <DataProperty IRI="#SecToolDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#title"/>
+        <DataProperty IRI="#IssueDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#topics"/>
+        <DataProperty IRI="#SecToolDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#twitter"/>
+        <DataProperty IRI="#SecUserDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#update_time"/>
+        <DataProperty IRI="#SecUserDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#updated_time"/>
+        <DataProperty IRI="#SecToolDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#user_id"/>
+        <DataProperty IRI="#SecUserDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#user_name"/>
+        <DataProperty IRI="#SecUserDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#IssueDataProperty"/>
+        <Class IRI="#Issue"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#OrganizationDataProperty"/>
+        <Class IRI="#Organization"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#SecToolDataProperty"/>
+        <Class IRI="#SecTool"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#SecUserDataProperty"/>
+        <Class IRI="#SecUser"/>
+    </DataPropertyDomain>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
