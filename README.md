@@ -6,6 +6,7 @@ Open source tools are widely used by hackers and security developers, but resear
 
 ## Details
 - `security tools ontology.owx`: This file provides the OWL format of our ontology model. The ontology model serves as the foundation for the SecTKG, aiding in the better organization and expression of knowledge and facilitating knowledge sharing. A total of 9 entity types and 7 relationships are defined in the ontology.
+- `visualization example.svg`: This file represents a visual example of the nodes and relationships exported by Neo4j Graphical User Interface.
 - `KnowledgeExtractionModule`: This directory contains the important code of the knowledge extraction method of SecTKG. We implement different entity recognition methods according to the features of different entity types to realize efficient and automatic knowledge extraction.
 
 ## Dataset
